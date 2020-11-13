@@ -39,10 +39,11 @@ ion-list {
 
 ion-list {
   margin: 10px;
-  background-color: #121212;
+  //background-color: #121212;
 }
 
-ion-input:host {
+ion-router-outlet:host(.item-interactive.ion-valid) {
   --highlight-color-focused: #FFF;
   --highlight-color-valid: #FFF;
 }
+
