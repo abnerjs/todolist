@@ -14,6 +14,7 @@
 
 .concluida{
   text-decoration: line-through;
+  text-decoration-color: #a00;
 }
 
 ion-card-content ion-label p {
@@ -29,4 +30,19 @@ ion-card-content ion-icon {
   border-radius: 50%;
   background-color: #DDD;
   text-align: right;
+  padding: 5px;
+}
+
+ion-list {
+  padding: 0;
+}
+
+ion-list {
+  margin: 10px;
+  background-color: #121212;
+}
+
+ion-input:host {
+  --highlight-color-focused: #FFF;
+  --highlight-color-valid: #FFF;
 }
