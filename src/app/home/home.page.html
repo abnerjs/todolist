@@ -14,22 +14,21 @@
   </ion-item>
     <hr>
     <ion-list>
-      <ion-card *ngFor="let item of tarefas">
+      <ion-card *ngFor="let item of tarefas"
+      
+      (click)="finalizar(item.id)"
+      [ngClass]="{'concluida':item.concluida}"
+      >
         <ion-card-content>
-          <p
-            (click)="finalizar(item.id)"
-            [ngClass]="{'concluida':item.concluida}"
-          >
+            <ion-label>
+              <p>
             {{ item.descricao }}
           </p>
-
-          <span (click)="excluir(item.id)">
-            <ion-icon name="trash-outline"></ion-icon>
-          </span>
+            </ion-label>
+            <ion-icon (click)="excluir(item.id)" name="trash-outline" slot='end'></ion-icon>
         </ion-card-content>
       </ion-card>
     </ion-list>
-
   </div>
   
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">

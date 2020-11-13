@@ -4,13 +4,8 @@
 }
 
 #container p{
-  color: black;
   font-size: 20px;
   width: 90%;
-}
-
-#container ion-card{
-  background-color: #CCC;
 }
 
 #container span{
@@ -19,4 +14,19 @@
 
 .concluida{
   text-decoration: line-through;
+}
+
+ion-card-content ion-label p {
+  color: #DDD;
+}
+
+ion-card-content ion-icon {
+  color: #a00;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-left: 90%;
+  border: solid #DDD;
+  border-radius: 50%;
+  background-color: #DDD;
+  text-align: right;
 }
